@@ -1,14 +1,18 @@
 .ffz--esp {
+	display: flex;
 	text-align: right;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	right: 18px;
+	justify-content: flex-end;
+	flex-direction: column;
+	flex-wrap: nowrap;
 
-	& > div {
+	&>div {
 		position: relative;
 		margin-bottom: 14px;
 
-		& > span {
+		&>span {
 			position: absolute;
 			bottom: -6px;
 			right: -4px;
@@ -24,12 +28,14 @@
 
 @keyframes ffz-esp-grow {
 	from {
-			transform: scale(1);
+		transform: scale(1);
 	}
+
 	50% {
-			transform: scale(1.1);
+		transform: scale(1.1);
 	}
+
 	to {
-			transform: scale(1);
+		transform: scale(1);
 	}
 }
